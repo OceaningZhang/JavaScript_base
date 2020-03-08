@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			function fun(){
+				alert("函数要执行啦");
+				
+				for(var i = 0 ; i < 5 ; i++){
+					//console.log(i);
+					if(i == 2){
+						//continue;
+						return;
+					}
+					console.log(i);
+				}
+				alert("函数执行完啦");
+			}
+			//fun();
+			function fun2(){
+				var obj = {name:"沙和尚"};
+				return obj;
+			}
+			var a = fun2();
+			//console.log("a = " + a);
+			function fun3(){
+				function fun4(){
+					alert("我是fun4");
+				}
+				return fun4;
+			}
+			a = fun3();
+			//console.log(a);
+			//a();
+			fun3()();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

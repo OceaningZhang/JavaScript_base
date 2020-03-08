@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			/* outer:
+			for(var i = 0 ; i < 5 ; i++){
+				console.log("@外层循环" + i);
+				break outer                                             ;
+				for(var j = 0 ; j < 5 ; j++){
+					console.log("内层循环" + j);
+				}
+				
+			} */
+			/* for(var i = 0 ; i < 5 ; i++){
+				
+				if(i == 2){
+					break;
+					
+				}
+				console.log(i);
+			} */
+			for(var i = 0 ; i < 5 ; i++){
+				if(i == 2){
+					continue;
+				}
+				console.log(i);
+			}
+		</script>
+	</head>                                             
+	<body>
+	</body>
+</html>

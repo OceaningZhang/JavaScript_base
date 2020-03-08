@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			var obj = new Object();
+			obj.name = "孙悟空";
+			obj["123"] = 372389;
+			obj["nihao"] = "你好";
+			var n = "nihao";
+			obj.test = true;
+			obj.test = null;
+			obj.test = undefined;
+			
+			var obj2 = new Object();
+			obj2.name = "猪八戒";
+			obj.test = obj2;
+			//console.log("test2" in obj);
+			console.log("name" in obj);
+			
+			
+			
+			//console.log(obj.test.name);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

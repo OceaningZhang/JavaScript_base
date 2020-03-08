@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			console.time("aa");
+			for(var i = 2 ; i <= 1000 ; i++){
+				var flag = true;
+				for(var j = 2 ; j <= Math.sqrt(i) ; j++){
+					if(i % j == 0){
+						flag = false;
+						break;
+					}
+				}
+				if(flag){
+					console.log(i);
+				}
+			}
+			console.timeEnd("aa");
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

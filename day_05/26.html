@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+		/* 	var money = 1000;
+			var count = 0;
+			while(money < 600000){
+				money *= 1.05;
+				count++;
+			}console.log("一共需要"+ count +"年"); */
+			while(true){
+				var score = prompt("请输入小明的成绩(0-100):");
+				if(score >= 0 && score <= 100){
+					break;
+				}
+				alert("请输入有效数字");
+			}
+			
+			
+			
+			if(score > 100 || score < 0 || isNaN(score)){
+				alert("拉出去枪毙");
+			}else{
+				if(score == 100){
+					alert("宝马，拿去");
+				}else if(score >= 80){
+					alert("手机，拿去玩");
+				}else if(score >= 60){
+					alert("参考书，拿去看");
+				}else{
+					alert("找打");
+				}
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

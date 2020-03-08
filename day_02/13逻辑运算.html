@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			//与运算：如果两个值都是true就会返回后边的数值。
+			var result = 2 && 1;
+			result = 0 && 1;
+			result = 1 && 0;
+			result = NaN && 0;
+			result = 0 && NaN;
+			result = 1|| 2;
+			result = 2 || 1;
+			result = NaN || 1;
+			result = 1 || NaN;
+			result = 0 || NaN;
+			result = "" || "hello";
+			result = -1 ||"憨批！！";
+			console.log("result = "+result);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

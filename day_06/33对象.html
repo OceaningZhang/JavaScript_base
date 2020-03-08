@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			/* var obj = new Object;
+			obj.name = "孙悟空";
+			obj.gender = "男";
+			obj.age = "18";
+			console.log(obj.age); */
+			
+		/* 	var obj = new Object;
+			obj.name = "dd";
+			obj.age = 16;
+			obj.gender = "男";
+			
+			obj.name = "33";
+			//delete obj.name;
+			console.log(obj.name); */
+			
+			
+			
+			
+		/* 	var obj = new Object();
+			obj.name = "孙悟空",
+			//console.log(obj.name);
+			obj["123"] = 123;
+			obj["sfjlf"] = 1233;
+			//console.log(obj["sfjlf"]);
+			obj.test = true;
+			//obj.test = null;
+			//obj.test = undefined;
+			//console.log(obj.test);
+			var obj2 = new Object();
+			obj2.name = "憨憨";
+			obj2.age = 18;
+			obj.test = obj2;
+			//console.log(obj.test.age);
+			console.log("name" in obj); */
+			/* 
+			var a = 123;
+			var b = 3425;
+			a++;
+			//console.log("a =" + a);
+			//console.log("b =" + b);
+			var obj = new Object();
+			obj.name = "呆瓜";
+			
+			var obj2 = obj;
+			obj.name = "憨憨";
+			obj.age = "11";
+			obj2 = null;
+			 */
+			//console.log(obj);
+			//console.log(obj2);
+			
+		/* 	var a = 1;
+			var b = 1;
+			//console.log(a == b);
+			var obj3 = new Object();
+			obj3.name = "铁憨憨";
+			var obj4 = new Object();
+			obj4.name = "铁憨憨";
+			console.log(obj3.name);
+			console.log(obj4.name);
+			console.log(obj3 == obj4); */
+			
+			/* 
+			var obj = {
+				name:"孙悟空",
+				age:18,
+				gender:"男",
+				test:{name:"猪八戒"}
+				
+			};
+			console.log(obj.test); */
+			
+			
+			//var fun = new Function("console.log('这是我的第一个函数');");
+			//fun()
+		/* 	function fun(){
+				console.log("这是我的第二个函数");
+				alert("略略略");
+				document.write("嘿嘿嘿嘿");
+			}
+			//fun();
+			var fun2 = function(){
+				console.log("我是匿名函数封装的代码");
+			}
+			fun2(); */
+			
+			/* function fun(a,b){
+				console.log("a = " + a);
+				console.log("b = " + b);
+				console.log(a + b);
+			}
+			//fun(123,123);
+			fun(123,"aajfh",123); */
+			/* 
+			function fun(a ,b, c){
+				//console.log(a + b + c);
+				var d = a + b + c;
+				//return d;
+				//alert("哈哈");
+			}
+			var result = fun(1,2,3);
+			//console.log("result =" + result);
+			var result = alert("hello");
+			console.log("result =" + result); */
+			
+			
+		/* 	function isOu(num){
+				return num % 2 == 0;
+				
+			}
+			var result = isOu(2);
+			console.log("result =" + result); */
+				
+			
+			
+		/* 	function mianji(r){
+				return 3.14 * r * r;
+			}
+			result = mianji(10);
+			console.log("result =" + result); */
+			/* function sayhello(o){
+				console.log("我是"+o.name+ ",今年我"+o.age+ "岁了,"
+				 +"我是"+o.gender+"人"+",我来自"+o.address);
+			}
+			var obj = { 
+				name:"孙悟空",
+				age:18,
+				gender:"男",
+				address:"花果山"
+			}; 
+			//sayhello(obj);
+			function fun(a){
+				console.log("a = "+ a);
+				//a(obj);
+			}//fun(sayhello);
+			fun(function(){}); */
+			
+			
+			/* function fun(){
+				alert("函数要执行啦");
+				for (var i = 0 ; i < 10 ; i++){
+					//console.log(i);
+					if(i == 2){
+						//break;
+						//continue;
+						return;
+						//console.log(i);
+					}
+					console.log(i);
+				}
+				alert("函数执行完啦");
+			}fun(); */
+			/* function fun2(){
+				
+				return {name:"沙和尚"};
+			}
+			var a = fun2();
+			//console.log("a =" + a.name);
+			function fun3(){
+				function fun4(){
+					alert("fun4");
+				}
+				return fun4;
+			}
+			a = fun3();
+			//console.log(a);
+			//a();
+			fun3()(); */
+			/* (function(){
+				alert("我是一个匿名函数");
+			})(); */
+			 /* (function (a , b){
+				  console.log("a = " + a);
+				  console.log("b = " + b);
+			  })(123,456); */
+			  var obj = new Object();
+			  obj.name = "孙悟空";
+			  obj.age = 18;
+			  obj.sayName = function (){
+				  console.log(obj.name);
+			  };
+			  function fun(){
+				  console.log(obj.name);
+			  }
+			  //console.log(obj.sayName);
+			  //obj.sayName();
+			 // fun();
+			 var obj2  = {
+				 name:"猪八戒",
+				 age:18,
+				 sayName:function(){
+					 console.log(obj2.name);
+				 }
+			 }
+			 obj2.sayName();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

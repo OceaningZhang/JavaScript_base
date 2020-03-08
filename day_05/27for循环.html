@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			/* for(var a = 1 ; a < 12 ; a++){
+				alert(a);
+			} */
+			/* var a = 1;
+			for(; a < 10 ;){
+				alert(a++);
+			} */
+			/* for(; ;){
+				alert("小朋友，你是否有很多问号？？？");
+			} */
+			 /*  var sum = 0;
+			for(var a = 1 ; a <= 100 ; a++){
+				if(a % 2 != 0){
+					//console.log(a);
+					sum = sum+a;
+				}
+				
+			}
+			console.log("奇数之和为: " +sum); */
+			/* for(var a = 1 , sum = 0 , count = 0 ; a <= 100 ; a++ ){
+				if(a % 7 == 0){
+					sum = sum+a;1
+					count++;
+				}
+			}
+			console.log("100以内的7的倍数的总个数为: "+count);
+			console.log("100以内所有7的和为: "+sum); */
+			/* for(var a = 100 ; a < 1000 ; a++){
+				var bai = parseInt(a/100);
+				var shi = parseInt((a - bai * 100) / 10);
+				 var ge = a % 10;
+				 if(bai*bai*bai + shi*shi*shi + ge*ge*ge == a){
+					 console.log(a);
+				 }
+			} */
+			var num = prompt("请输入一个大于1的整数:");
+			if(num <= 1){
+				alert("该值不合法！");
+			}else{
+				var flag = true;
+				for(var i = 2 ; i < num ; i++){
+					if(num % i == 0){
+						flag = false;
+					}
+				}
+				if (flag){
+					alert(num + "是质数！！！");
+				}else{
+					alert("这个不是质数");
+				}
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
