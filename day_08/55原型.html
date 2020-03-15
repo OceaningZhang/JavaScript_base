@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			function  MyClass(){
+			}
+			MyClass.prototype.a = 10;
+			MyClass.prototype.sayHello = function(){
+				alert("hello");
+			}
+			var mc = new MyClass();
+			//mc.sayHello();
+			//mc.a = "hello";
+			//console.log(mc.a);
+		//	console.log(mc.__proto__ == MyClass.prototype);
+		
+		function MyClass(){
+			MyClass.prototype.name = "我是原型中的名字";
+		}
+		var mc = new MyClass();
+		mc.age = 18;
+		//console.log(mc.name);
+		//console.log("name" in mc);
+		//console.log(mc.hasOwnProperty("age"));
+		//console.log(mc.hasOwnProperty("hasOwnProperty"));
+		console.log(mc.__proto__.__proto__.hasOwnProperty("hasOwnProperty"));
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

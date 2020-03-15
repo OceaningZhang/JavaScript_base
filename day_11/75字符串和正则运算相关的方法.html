@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			var str = "1a2b3c4d5f6g7";
+			var result = str.split(/[a-z]/);
+			str = " haha  haha  hah aabc aec adc afc agc aic"
+			result = str.search(/a[bedfgi]c/)
+			str = "1a2b3c4d5f6g7AABBCC";
+			result = str.match(/[a-z]/gi);
+			str = "1a2b3c4d5f6g7AABBCC";
+			result = str.replace(/[a-z]/gi,"");
+			console.log(result);
+			//console.log(Array.isArray(result));
+			//console.log(result[0]);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
+ 
