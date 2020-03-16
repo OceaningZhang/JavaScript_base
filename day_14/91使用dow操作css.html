@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			
+			#box1{
+				width: 100px;
+				height: 100px;
+				background-color: #0000FF;
+			}
+			
+		</style>
+		<script type="text/javascript">
+			
+			
+			window.onload = function(){
+				
+				var box1 = document.getElementById("box1");
+				var btn01 = document.getElementById("btn01");
+				btn01.onclick = function(){
+					
+					box1.style.width = "300px";
+					box1.style.height = "300px";
+					box1.style.backgroundColor = "yellow";
+					
+				};
+				
+				var btn02 = document.getElementById("btn02");
+				btn02.onclick = function(){
+					alert(box1.style.width);
+					alert(box1.style.height);
+					alert(box1.style.backgroundColor);
+				};
+				
+			};
+		</script>
+	</head>
+	<body>
+		
+		<button id = "btn01">按钮</button>
+		<button id = "btn02">按钮2</button>
+		
+		<br/><br/>
+		
+		<div id="box1"></div>
+		
+	</body>
+</html>
