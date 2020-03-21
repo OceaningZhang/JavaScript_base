@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			
+			window.onload = function(){
+				
+				var btn01 = document.getElementById("btn01");
+				
+				btn01.onclick = function(){
+					
+					//history.back();
+					history.go(-2);
+				}
+				
+			};
+			
+		</script>
+	</head>
+	<body>
+		<button id="btn01">点我一下</button>
+		<h1>History</h1>
+		<a href="113test01.html">去test01</a>
+	</body>
+</html>

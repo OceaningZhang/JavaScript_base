@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload = function(){
+				var btn01 = document.getElementById("btn01");
+				btn01.onclick = function(){
+					//location = "http://www.baidu.com";
+					//location = "111BOM.html";
+					//location.assign("http://www.baidu.com");
+					
+					//location.reload(true);
+					
+					location.replace("111BOM.html");
+					
+				};
+			};
+		</script>
+	</head>
+	<body>
+		<button id="btn01">点击</button>
+		<h1>location</h1>
+		<input type="text"/>
+		<a href="111BOM.html">前往BOM</a>
+	</body>
+</html>
